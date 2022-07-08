@@ -1,4 +1,4 @@
-import './styles/footerScreen.css'
+import './Styles/footerScreen.css'
 
 const FooterScreen = () => {
   return (
