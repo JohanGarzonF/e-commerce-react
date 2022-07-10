@@ -15,8 +15,6 @@ const HomeScreen = () => {
     dispatch(getAllProducts())
   },[])
 
-  console.log(products);
-
   return (
     <div className='home'>
       <InputSearch/>

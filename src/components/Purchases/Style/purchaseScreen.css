@@ -11,11 +11,13 @@
 }
 .purchase-card {
   border: 1px solid var(--border-color);
+  background-color: var(--primary-color);
   width: min(480px, 400px);
   padding: 10px;
   border-radius: 10px;
 }
 .date-purchase {
+  color: var(--secondary-color);
   padding: 10px;
   border-bottom: 1px solid var(--border-color);
 }
@@ -27,4 +29,9 @@
 }
 .purchase-info__item {
   padding: 10px;
+}
+@media (max-width: 576px){
+  .purchase-card{
+    width: 95%;
+  }
 }

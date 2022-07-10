@@ -2,7 +2,7 @@ import React from 'react'
 
 const UserLogged = () => {
   return (
-    <article>
+    <article className='logged'>
       <i className="fa-solid fa-user-check"></i>
       <h2>User Logged</h2>
     </article>

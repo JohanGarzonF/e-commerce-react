@@ -13,7 +13,6 @@ const PurchasesCard = ({purchase}) => {
 
   const dateOfPurchase = `${months[month-1]} ${day}, ${year}`
 
-  console.log(purchase)
 
   return(
     <article className='purchase-card'>

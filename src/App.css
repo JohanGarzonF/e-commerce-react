@@ -3,11 +3,11 @@
   --padding-tablet: 50px;
   --padding-desktop: 100px;
   --primary-color: #fff;
-  --secondary-color: #F85555;
+  --secondary-color: #3a8edd;
   --border-color: #9996;
   --color-primary-text: #000;
   --color-secondary-text: #9996;
-  --color-footer: #3C3C3B;
+  --color-footer: rgb(32, 32, 32);;
 }
 
 /* == Reset == */
@@ -19,6 +19,7 @@ html {
 }
 body {
   margin: 0;
+  background-color: rgb(221, 221, 221);
 }
 h1, h2, h3, h4, p, ul {
   margin-top: 0;
@@ -34,4 +35,12 @@ a {
 }
 img {
   width: 300px;
+}
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1;
 }

@@ -41,16 +41,18 @@ function App() {
   return (
     <div className="App">
       <HeaderScreen/>
-      <Routes>
-        <Route path='/' element={<HomeScreen/>}/>
-        <Route path='/login' element={<LoginScreen/>} />
+      <main className='main'>
+        <Routes>
+          <Route path='/' element={<HomeScreen/>}/>
+          <Route path='/login' element={<LoginScreen/>} />
 
-        <Route element={<ProtectedRoutes/>}>
-          <Route path='/cart' element={<CartScreen/>}/>
-          <Route path='/purchases' element={<PurchasesScreen/>}/>
-        </Route>
-        <Route path='/product/:id' element={<ProductScreen/>}/>
-      </Routes>
+          <Route element={<ProtectedRoutes/>}>
+            <Route path='/cart' element={<CartScreen/>}/>
+            <Route path='/purchases' element={<PurchasesScreen/>}/>
+          </Route>
+          <Route path='/product/:id' element={<ProductScreen/>}/>
+        </Routes>
+      </main>
       <FooterScreen/>
     </div>
   )

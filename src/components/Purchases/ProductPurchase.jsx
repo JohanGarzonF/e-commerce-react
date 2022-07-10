@@ -2,7 +2,6 @@ import React from 'react'
 
 const ProductPurchase = ({product}) => {
 
-  console.log(product)
   return (
     <ul className='purchase-info'>
       <li className='purchase-info__item'>{product.title}</li> 
