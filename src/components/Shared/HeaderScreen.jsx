@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux';
 import './Styles/headerScreen.css'
-import { setCartGlobal } from '../../store/slices/cart.slice';
+import { getAllProductCart } from '../../store/slices/cart.slice';
 
 const HeaderScreen = () => {
 
@@ -19,7 +19,7 @@ const HeaderScreen = () => {
   const dispatch = useDispatch()
 
   const goCart = () => {
-    clickNavbar(), dispatch(setCartGlobal)
+    clickNavbar()
   }
 
   return (

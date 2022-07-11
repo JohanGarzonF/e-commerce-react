@@ -27,14 +27,14 @@ const CardProduct = ({product}) => {
       })
       .catch(err => console.log(err))
   }
-  
+
   return (
     <article onClick={goProductId} className='card-product'>
       <header className='card-product__header'>
         <img 
-          className='card-product__img-back' 
+          className='card-product__img-back'
           src={product.productImgs[1]} 
-          alt="" 
+          alt=""
         />
         <img 
           className='card-product__img' 

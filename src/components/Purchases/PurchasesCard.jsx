@@ -4,14 +4,15 @@ import ProductPurchase from './ProductPurchase'
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 const PurchasesCard = ({purchase}) => {
-  const date = Date(purchase.updateAt)
+  const date = new Date(purchase.updatedAt)
   
-  const format = new Date(date)
-  let day = format.getDate()
-  let month = format.getMonth() + 1
-  let year = format.getFullYear()
+  let day = date.getDate()
+  let month = date.getMonth() + 1
+  let year = date.getFullYear()
 
   const dateOfPurchase = `${months[month-1]} ${day}, ${year}`
+
+  console.log(purchase)
 
 
   return(
